@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
-
+import { ColorService } from 'src/app/services/color-service.service';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -9,13 +8,14 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class SidebarComponent implements OnInit {
 
-  mycolor: any;
-
-  constructor() {
-    this.mycolor = null;
+  constructor(private _color: ColorService) {
   }
 
   ngOnInit(): void {
+  }
+
+  setColor(color: string): void {
+    this._color.setMainColor(color);
   }
 
 }

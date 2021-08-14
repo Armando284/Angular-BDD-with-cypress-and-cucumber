@@ -1,10 +1,5 @@
 :root {
   --PHI: 1.618;
-  --bg-fib-1: hsl(212, 77%, 50%);
-  --bg-fib-2: hsl(212, 77%, 40%);
-  --bg-fib-3: hsl(212, 77%, 30%);
-  --bg-fib-4: hsl(212, 77%, 20%);
-  --bg-fib-5: hsl(212, 77%, 10%);
 }
 * {
   margin: 0;
@@ -30,12 +25,12 @@ nav {
     font-size: 1.8rem;
     letter-spacing: 1.5px;
     font-weight: 700;
-    color: #ccc;
+    color: #eee;
     transition: all 0.3s ease-in-out;
   }
   .nav-brand:hover,
   .nav-brand:focus {
-    color: #aaa;
+    color: #ccc;
     transform-origin: center;
     transform: scaleX(0.9);
   }
@@ -50,8 +45,9 @@ nav {
   width: 300px;
   height: calc(100% - 40px);
   display: flex;
-  padding-top: 40px;
-  justify-content: center;
+  flex-direction: column;
+  padding-top: calc(60px + 20px);
+  align-items: center;
   background: linear-gradient(0deg, #222 11.2%, #555 100%);
   color: #ccc;
   font-size: 1.2rem;
@@ -68,19 +64,59 @@ input,
 button {
   cursor: pointer;
 }
+.btn-group {
+  display: flex;
+  align-items: center;
+}
 .btn {
-  padding: 5px 15px;
-  background: rgb(10, 10, 10);
-  color: #eee;
-  border: 1px solid rgb(0, 0, 0);
-  font-size: 1rem;
-  letter-spacing: 1.25px;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  border-radius: 15px;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
   transform: scaleX(0.9);
-  color: #aaa;
+}
+.btn-orange {
+  background: hsl(39, 70%, 50%);
+  box-shadow: hsl(39, 70%, 30%) 0 0 5px;
+}
+.btn-yellow {
+  background: hsl(60, 70%, 50%);
+  box-shadow: hsl(60, 70%, 30%) 0 0 5px;
+}
+.btn-green {
+  background: hsl(120, 70%, 25%);
+  box-shadow: hsl(120, 70%, 10%) 0 0 5px;
+}
+.btn-blue {
+  background: hsl(240, 70%, 50%);
+  box-shadow: hsl(240, 70%, 30%) 0 0 5px;
+}
+.btn-purple {
+  background: hsl(300, 70%, 25%);
+  box-shadow: hsl(300, 70%, 10%) 0 0 5px;
+}
+.btn-red {
+  background: hsl(0, 70%, 50%);
+  box-shadow: hsl(0, 70%, 30%) 0 0 5px;
+}
+.bg-orange {
+  --bg-fib-1: hsl(39, 70%, 50%);
+  --bg-fib-2: hsl(39, 70%, 40%);
+  --bg-fib-3: hsl(39, 70%, 30%);
+  --bg-fib-4: hsl(39, 70%, 20%);
+  --bg-fib-5: hsl(39, 70%, 10%);
+}
+.bg-blue {
+  --bg-fib-1: hsl(240, 70%, 50%);
+  --bg-fib-2: hsl(240, 70%, 40%);
+  --bg-fib-3: hsl(240, 70%, 30%);
+  --bg-fib-4: hsl(240, 70%, 20%);
+  --bg-fib-5: hsl(240, 70%, 10%);
 }
 .fib {
   transition: all 1s ease-in-out;

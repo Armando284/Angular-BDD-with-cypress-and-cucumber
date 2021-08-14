@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ColorService } from 'src/app/services/color-service.service';
 
 @Component({
   selector: 'app-example',
@@ -8,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExampleComponent implements OnInit {
 
-  constructor() { }
+  myBackground: string;
+
+  constructor(private _color: ColorService) {
+    this.myBackground = '';
+    this._color.getMainColor().then(
+      data => {
+        this.myBackground = data;
+        console.log(data);
+      },
+      err => console.log(err)
+    );
+  }
 
   ngOnInit(): void {
+
   }
 
 }

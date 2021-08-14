@@ -1,11 +1,12 @@
 <div class="sidebar">
-  <form>
-    <div class="form-group">
-      <label for="mycolor"> {{ "Choose your color." | uppercase }} </label>
-      <input type="color" name="mycolor" />
-    </div>
-    <div class="form-group mr-auto">
-      <button type="submit" class="btn">Test</button>
-    </div>
-  </form>
+  <h3>Choose your background</h3>
+  <br />
+  <div class="btn-group">
+    <div class="btn btn-orange" (click)="setColor('orange')"></div>
+    <div class="btn btn-yellow" (click)="setColor('yellow')"></div>
+    <div class="btn btn-green" (click)="setColor('green')"></div>
+    <div class="btn btn-blue" (click)="setColor('blue')"></div>
+    <div class="btn btn-purple" (click)="setColor('purple')"></div>
+    <div class="btn btn-red" (click)="setColor('red')"></div>
+  </div>
 </div>
