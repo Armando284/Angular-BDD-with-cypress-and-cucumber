@@ -1,1 +1,141 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --PHI: 1.618;
+  --bg-fib-1: hsl(212, 77%, 50%);
+  --bg-fib-2: hsl(212, 77%, 40%);
+  --bg-fib-3: hsl(212, 77%, 30%);
+  --bg-fib-4: hsl(212, 77%, 20%);
+  --bg-fib-5: hsl(212, 77%, 10%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+nav {
+  width: 100%;
+  height: 60px;
+  background: #333;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  .nav-brand {
+    text-decoration: none;
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    color: #ccc;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-brand:hover,
+  .nav-brand:focus {
+    color: #aaa;
+    transform-origin: center;
+    transform: scaleX(0.9);
+  }
+}
+.content {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 60px;
+}
+.sidebar {
+  width: 300px;
+  height: calc(100% - 40px);
+  display: flex;
+  padding-top: 40px;
+  justify-content: center;
+  background: linear-gradient(0deg, #222 11.2%, #555 100%);
+  color: #ccc;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.form-group {
+  margin: 20px 5px;
+}
+.mr-auto {
+  display: flex;
+  justify-content: flex-end;
+}
+input,
+button {
+  cursor: pointer;
+}
+.btn {
+  padding: 5px 15px;
+  background: rgb(10, 10, 10);
+  color: #eee;
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 1rem;
+  letter-spacing: 1.25px;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover,
+.btn:focus {
+  transform: scaleX(0.9);
+  color: #aaa;
+}
+.fib {
+  transition: all 1s ease-in-out;
+}
+#fib-0 {
+  width: calc(100vw - 300px);
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+#fib-1 {
+  width: calc(100% / var(--PHI));
+  height: 100%;
+  background: var(--bg-fib-1);
+  transition-delay: 0s;
+}
+#fib-2 {
+  width: calc(100% - (100% / var(--PHI)));
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#fib-3 {
+  width: 100%;
+  height: calc(100% / var(--PHI));
+  background: var(--bg-fib-2);
+  transition-delay: 0.3s;
+}
+#fib-5 {
+  width: 100%;
+  height: calc(100% - (100% / var(--PHI)));
+  display: flex;
+  flex-direction: row-reverse;
+}
+#fib-8 {
+  width: calc(100% / var(--PHI));
+  height: 100%;
+  background: var(--bg-fib-3);
+  transition-delay: 0.5s;
+}
+#fib-13 {
+  width: calc(100% - (100% / var(--PHI)));
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+#fib-21 {
+  width: 100%;
+  height: calc(100% / var(--PHI));
+  background: var(--bg-fib-4);
+  transition-delay: 0.8s;
+}
+#fib-34 {
+  width: 100%;
+  height: calc(100% - (100% / var(--PHI)));
+  background: var(--bg-fib-5);
+  transition-delay: 1.3s;
+}
