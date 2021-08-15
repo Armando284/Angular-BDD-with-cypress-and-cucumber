@@ -1,0 +1,25 @@
+<div class="message-list" data-test="message-list">
+  <i *ngIf="messages.length < 1" data-test="no-message-found">
+    There are no messages to show :(
+  </i>
+  <div
+    class="message"
+    *ngFor="let message of messages; let idx = index"
+    data-test="message"
+  >
+    <h3 data-test="author">{{ message.author }}</h3>
+    <p data-test="content">{{ message.content }}</p>
+    <i data-test="date">{{
+      message.createdAt | date: "MMM d, y, h:mm:ss a"
+    }}</i>
+    <div class="btn-control">
+      <button
+        class="btn-danger"
+        (click)="deleteMessage(idx)"
+        data-test="delete-button"
+      >
+        X
+      </button>
+    </div>
+  </div>
+</div>

@@ -7,5 +7,7 @@ Feature: Change Color Test Feature
     Given The user is on the home page
     When The user click select blue background button
     Then Background colors on the right side should change to blue color palette
-    And The user click select red background button
+    And Add message button background change to blue
+    Given The user click select red background button
     Then Background colors on the right side should change to red color palette
+    And Add message button background change to red

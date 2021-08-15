@@ -28,7 +28,7 @@
             "name": "The user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 494000000
+              "duration": 4002000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "The user click select blue background button",
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 201000000
             }
           },
           {
@@ -48,27 +48,47 @@
             "name": "Background colors on the right side should change to blue color palette",
             "result": {
               "status": "passed",
-              "duration": 24000000
+              "duration": 43000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
+            "name": "Add message button background change to blue",
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
             "name": "The user click select red background button",
             "result": {
               "status": "passed",
-              "duration": 117000000
+              "duration": 146000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
+            "line": 12,
             "name": "Background colors on the right side should change to red color palette",
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 36000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Add message button background change to red",
+            "result": {
+              "status": "passed",
+              "duration": 31000000
             }
           }
         ]

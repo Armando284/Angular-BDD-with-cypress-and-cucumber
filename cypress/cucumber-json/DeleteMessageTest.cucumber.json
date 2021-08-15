@@ -1,0 +1,68 @@
+[
+  {
+    "description": "  Test delete the one message present at home page visit",
+    "keyword": "Feature",
+    "name": "Delete Message Test Feature",
+    "line": 1,
+    "id": "delete-message-test-feature",
+    "tags": [],
+    "uri": "DeleteMessageTest.feature",
+    "elements": [
+      {
+        "id": "delete-message-test-feature;delete-message",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Delete Message",
+        "tags": [
+          {
+            "name": "@Focus",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "The user is on the home page",
+            "result": {
+              "status": "passed",
+              "duration": 392000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "The user click delete message button",
+            "result": {
+              "status": "passed",
+              "duration": 163000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "The message should be deleted from the list",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "The no messages found message should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
