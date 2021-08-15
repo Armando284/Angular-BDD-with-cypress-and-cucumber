@@ -28,7 +28,7 @@
             "name": "The user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 392000000
+              "duration": 2209000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "The user click delete message button",
             "result": {
               "status": "passed",
-              "duration": 163000000
+              "duration": 258000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "The message should be deleted from the list",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 22000000
             }
           },
           {
@@ -58,7 +58,7 @@
             "name": "The no messages found message should be displayed",
             "result": {
               "status": "passed",
-              "duration": 25000000
+              "duration": 34000000
             }
           }
         ]

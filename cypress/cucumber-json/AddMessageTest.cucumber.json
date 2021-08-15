@@ -1,18 +1,18 @@
 [
   {
-    "description": "  Test background change color",
+    "description": "  Test add a new message to the list",
     "keyword": "Feature",
-    "name": "Change Color Test Feature",
+    "name": "Add New Message Test Feature",
     "line": 1,
-    "id": "change-color-test-feature",
+    "id": "add-new-message-test-feature",
     "tags": [],
-    "uri": "ChangeColorTest.feature",
+    "uri": "AddMessageTest.feature",
     "elements": [
       {
-        "id": "change-color-test-feature;change-color",
+        "id": "add-new-message-test-feature;add-message",
         "keyword": "Scenario",
         "line": 6,
-        "name": "Change Color",
+        "name": "Add Message",
         "tags": [
           {
             "name": "@Focus",
@@ -28,67 +28,57 @@
             "name": "The user is on the home page",
             "result": {
               "status": "passed",
-              "duration": 2246000000
+              "duration": 2260000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 8,
-            "name": "The user click select blue background button",
+            "name": "The user fill the author and content inputs",
             "result": {
               "status": "passed",
-              "duration": 209000000
+              "duration": 982000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "Background colors on the right side should change to blue color palette",
+            "name": "There should not be error feedback",
             "result": {
               "status": "passed",
-              "duration": 39000000
+              "duration": 22000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "Add message button background change to blue",
+            "name": "The user click on the ADD button",
             "result": {
               "status": "passed",
-              "duration": 39000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 11,
-            "name": "The user click select red background button",
-            "result": {
-              "status": "passed",
-              "duration": 140000000
+              "duration": 175000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
-            "name": "Background colors on the right side should change to red color palette",
+            "line": 11,
+            "name": "The author and content inputs should reset",
             "result": {
               "status": "passed",
-              "duration": 41000000
+              "duration": 62000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
-            "name": "Add message button background change to red",
+            "line": 12,
+            "name": "The message should be added at the end of the messages list",
             "result": {
               "status": "passed",
-              "duration": 37000000
+              "duration": 168000000
             }
           }
         ]
