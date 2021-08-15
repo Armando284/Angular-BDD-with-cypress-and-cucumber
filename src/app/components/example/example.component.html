@@ -1,14 +1,8 @@
 <div
   id="fib-0"
   class="fib"
-  [ngClass]="{
-    'bg-orange': myBackground === 'orange',
-    'bg-yellow': myBackground === 'yellow',
-    'bg-green': myBackground === 'green',
-    'bg-blue': myBackground === 'blue',
-    'bg-purple': myBackground === 'purple',
-    'bg-red': myBackground === 'red'
-  }"
+  [ngClass]="backgroundColor"
+  data-test="background-example"
 >
   <div id="fib-1" class="fib"></div>
   <div id="fib-2" class="fib">

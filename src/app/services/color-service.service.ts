@@ -1,5 +1,4 @@
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { EventEmitter, Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -7,16 +6,20 @@ import { Observable } from 'rxjs';
 export class ColorService {
 
   private mainColor: string;
+  $emitter = new EventEmitter;
 
   constructor() {
     this.mainColor = 'orange';
   }
 
-  setMainColor(color: string): void {
+  setMainColor(color: string): string {
     this.mainColor = color;
+    console.log(this.mainColor);
+    this.$emitter.emit();
+    return this.mainColor;
   }
 
-  async getMainColor(): Promise<string> {
-    return await this.mainColor;
+  getMainColor(): string {
+    return this.mainColor;
   }
 }

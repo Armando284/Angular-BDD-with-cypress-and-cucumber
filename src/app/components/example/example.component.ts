@@ -9,21 +9,23 @@ import { ColorService } from 'src/app/services/color-service.service';
 })
 export class ExampleComponent implements OnInit {
 
-  myBackground: string;
+  backgroundColor: string = '';
 
   constructor(private _color: ColorService) {
-    this.myBackground = '';
-    this._color.getMainColor().then(
-      data => {
-        this.myBackground = data;
-        console.log(data);
-      },
-      err => console.log(err)
-    );
+    this.getBackgroundColor();
+    this._color.$emitter.subscribe(() => this.getBackgroundColor())
   }
 
   ngOnInit(): void {
 
+  }
+
+  getBackgroundColor(): void {
+    this.backgroundColor = `bg-${this._color.getMainColor()}`;
+  }
+
+  ngOnDestroy(): void {
+    this._color.$emitter.unsubscribe();
   }
 
 }
